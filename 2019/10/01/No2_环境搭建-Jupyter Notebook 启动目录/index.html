@@ -63,7 +63,7 @@
 <meta property="og:site_name" content="被发现了">
 <meta property="og:description" content="本文记录了环境搭建过程中所遇到的问题Step1: win+R 调出运行窗口，然后输入cmd进入命令窗口，输入下列指令 1jupyter notebook --generate-config  Step2:此时在User文件夹下会出现.jupyter的文件夹，进入该文件夹后会看到名为”jupyter_notebook_config.py”的文件Step3:打开”jupyter_notebook_co">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-10-02T07:19:18.115Z">
+<meta property="og:updated_time" content="2019-10-14T07:18:12.724Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="环境搭建 - Jupyter Notebook 启动目录">
 <meta name="twitter:description" content="本文记录了环境搭建过程中所遇到的问题Step1: win+R 调出运行窗口，然后输入cmd进入命令窗口，输入下列指令 1jupyter notebook --generate-config  Step2:此时在User文件夹下会出现.jupyter的文件夹，进入该文件夹后会看到名为”jupyter_notebook_config.py”的文件Step3:打开”jupyter_notebook_co">
@@ -237,7 +237,7 @@
                   <i class="fa fa-calendar-check-o"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2019-10-02 15:19:18" itemprop="dateModified" datetime="2019-10-02T15:19:18+08:00">2019-10-02</time>
+                <time title="修改时间：2019-10-14 15:18:12" itemprop="dateModified" datetime="2019-10-14T15:18:12+08:00">2019-10-14</time>
               </span>
             
           
@@ -260,6 +260,9 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">c.NotebookApp.notebook_dir = &apos;D:\\Jupyters&apos;</span><br></pre></td></tr></table></figure>
 
 <p>类似的路径<br>Step4:修改Jupyter的快捷方式，右键”属性” -&gt; “快捷方式” -&gt; “目标”，将其中的”%USER%”删除，再次启动Jupyter即可</p>
+<h4 id="将Anaconda创建的环境添加至jupyter中"><a href="#将Anaconda创建的环境添加至jupyter中" class="headerlink" title="将Anaconda创建的环境添加至jupyter中"></a>将Anaconda创建的环境添加至jupyter中</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># 先激活环境，这里还是以我刚才建立的 tensorflow 为例</span><br><span class="line">&gt; activate tensorflow</span><br><span class="line"># 安装 ipykernel 模块</span><br><span class="line">(tensorflow)&gt; pip install ipykernel</span><br><span class="line"># 将自己环境添加到 ipython 的 kernel 里</span><br><span class="line">(tensorflow)&gt; python -m ipykernel install --user --name xxx(你的环境名) --display-name xxx(你 kernel 的名字，可以在 jupyter 中看到，可以和环境名不一样）</span><br></pre></td></tr></table></figure>
+
+<p><a href="https://www.jianshu.com/p/d621980820d5" target="_blank" rel="noopener">来源</a></p>
 
     </div>
 
@@ -346,7 +349,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#本文记录了环境搭建过程中所遇到的问题"><span class="nav-number">1.</span> <span class="nav-text">本文记录了环境搭建过程中所遇到的问题</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#本文记录了环境搭建过程中所遇到的问题"><span class="nav-number">1.</span> <span class="nav-text">本文记录了环境搭建过程中所遇到的问题</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#将Anaconda创建的环境添加至jupyter中"><span class="nav-number">1.1.</span> <span class="nav-text">将Anaconda创建的环境添加至jupyter中</span></a></li></ol></li></ol></div>
         
       </div>
       <!--/noindex-->
@@ -361,7 +364,7 @@
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">6</span>
+          <span class="site-state-item-count">5</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -370,7 +373,7 @@
       
       <div class="site-state-item site-state-tags">
         
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">标签</span>
         
       </div>
